@@ -37,7 +37,6 @@
     }
 </script>
 <Page>
-    <Header></Header>
     <Content>
         <Router url="/academic/">
             <nav>
@@ -61,5 +60,4 @@
             </div>
         </Router>
     </Content>
-    <SideNav></SideNav>
 </Page>

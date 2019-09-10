@@ -1,24 +1,39 @@
 <script>
-
-	import {Router, Route, Link} from 'svelte-routing';
-	import HeaderMobile from './components/HeaderMobile.svelte';
-	import Page from './components/Page.svelte';
-	import Header from './components/Header.svelte';
-	import SideNav from './components/SideNav.svelte';
+    import Page from './components/Page.svelte';
+    import Header from './components/Header.svelte';
+    import SideNav from './components/SideNav.svelte';
+    import HeaderMobile from './components/HeaderMobile.svelte';
+    import Content from './components/Content.svelte';
+    import {Router, Route, Link} from 'svelte-routing';
+    import Dashboard from './pages/dashboard/Dashboard.svelte';
+    import StudyPlan from './pages/studyplan/StudyPlan.svelte';
+    import ProjectAcademic from './pages/project_academic/ProjectAcademic.svelte';
+    import Profile from './pages/profile/Profile.svelte';
+    import Notes from './pages/notes/Notes.svelte';
+    import Finance from './pages/finance/Finance.svelte';
+    import Academic from './pages/academic/Academic.svelte';
+    
 </script>
 
-<svelte:head>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
-</svelte:head>
+<HeaderMobile></HeaderMobile>
+<Header></Header>
+<SideNav></SideNav>
 
-<div>
 <Router>
-	<HeaderMobile></HeaderMobile>
-
-	<Page>
-		<Header></Header>
-		<SideNav></SideNav>
-	</Page>
-
+    <div>
+        <Route path="/"><Dashboard></Dashboard></Route>
+        <Route path="studyplan"><StudyPlan></StudyPlan></Route>
+        <Route path="academic/*"><Academic></Academic></Route>
+        <Route path="finance"><Finance></Finance></Route>
+        <Route path="notes"><Notes></Notes></Route>
+        <Route path="profile"><Profile></Profile></Route>
+        <Route path="project"><ProjectAcademic></ProjectAcademic></Route>
+        <Route path="study_plan"><StudyPlan></StudyPlan></Route>
+    </div>
 </Router>
+
+
+<div id="kt_scrolltop" class="kt-scrolltop">
+<i class="fa fa-arrow-up"></i>
 </div>
+
