@@ -6,9 +6,7 @@
     import Card from '../../components/Card.svelte';
 </script>
 <Page>
-    <Header></Header>
     <Content>
         
     </Content>
-    <SideNav></SideNav>
 </Page>

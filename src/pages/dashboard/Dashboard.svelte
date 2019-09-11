@@ -3,7 +3,6 @@
     import Header from '../../components/Header.svelte';
     import SideNav from '../../components/SideNav.svelte';
     import Content from '../../components/Content.svelte';
-    import './dashboard.js';
     import Card from '../../components/Card.svelte';
     let menus = [
         [{

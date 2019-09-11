@@ -5,6 +5,8 @@
     import Content from '../../components/Content.svelte';
     import Card from '../../components/Card.svelte';
     import StudyPlan from "./StudyPlan.svelte"
+    import StudyResult from "./StudyResult.svelte"
+    import ScoreList from "./ScoreList.svelte"
     import {Router, Route, Link} from "svelte-routing";
 
     let iskrs = true;
@@ -30,10 +32,7 @@
             case 'nilai':
                 isnilai = true;
                 break;
-        
-            default:
-                break;
-        }
+        };
     }
 </script>
 <Page>
@@ -43,11 +42,11 @@
                 <div class="kt-subheader  kt-grid__item" id="kt_subheader">
                     <div class="kt-container  kt-container--fluid ">
                         <div class="kt-subheader__main">
-                            <div class="btn kt-subheader__{btnkrs}" on:click={()=>handleClick('krs')}><Link to="/">KRS</Link></div>
+                            <Link to="/"><div class="btn kt-subheader__{btnkrs}" on:click={()=>handleClick('krs')}>KRS</div></Link>
 
-                            <div class="btn kt-subheader__{btnkhs} " on:click={()=>handleClick('khs')}><Link to="khs">KHS</Link></div>
+                            <Link to="khs"><div class="btn kt-subheader__{btnkhs} " on:click={()=>handleClick('khs')}>KHS</div></Link>
 
-                            <div class="btn kt-subheader__{btnnilai}" on:click={()=>handleClick('nilai')}><Link to="nilai">Daftar Nilai</Link></div>
+                            <Link to="nilai"><div class="btn kt-subheader__{btnnilai}" on:click={()=>handleClick('nilai')}>Daftar Nilai</div></Link>
                         </div>
                     </div>
                 </div>
@@ -55,8 +54,8 @@
             </nav>
             <div>
                 <Route path="/"><StudyPlan/></Route>
-                <Route path="/khs">khs</Route>
-                <Route path="/nilai">daftar</Route>
+                <Route path="/khs"><StudyResult/></Route>
+                <Route path="/nilai"><ScoreList></ScoreList></Route>
             </div>
         </Router>
     </Content>

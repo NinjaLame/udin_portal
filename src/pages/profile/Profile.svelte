@@ -3,11 +3,9 @@
     import Header from '../../components/Header.svelte';
     import SideNav from '../../components/SideNav.svelte';
     import Content from '../../components/Content.svelte';
-    import './profile.js';
     import Card from '../../components/Card.svelte';
 </script>
 <Page>
-    <Header></Header>
     <Content>
         <div class="kt-container  kt-grid__item kt-grid__item--fluid">
 		
@@ -422,5 +420,4 @@
 
 	</div>
     </Content>
-    <SideNav></SideNav>
 </Page>

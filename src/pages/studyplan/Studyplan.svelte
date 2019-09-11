@@ -4,10 +4,8 @@
     import SideNav from '../../components/SideNav.svelte';
     import Content from '../../components/Content.svelte';
     import Card from '../../components/Card.svelte';
-    import './dashboard.js';
 </script>
 <Page>
-    <Header></Header>
     <Content>
         <div class="col-xl-8 order-lg-2 order-xl-1">
             <div class="kt-portlet kt-portlet--height-fluid kt-portlet--mobile ">
@@ -34,5 +32,4 @@
             </div>
         </div>
     </Content>
-    <SideNav></SideNav>
 </Page>

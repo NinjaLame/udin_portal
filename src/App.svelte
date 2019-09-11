@@ -15,7 +15,6 @@
     
 </script>
 
-<HeaderMobile></HeaderMobile>
 <Header></Header>
 <SideNav></SideNav>
 
