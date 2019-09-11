@@ -2,7 +2,7 @@
 	import { navigate  } from "svelte-routing"
 
 	const goDashboard = () => {
-		navigate('/', {replace:true})
+		navigate('/', {replace:false})
 	}
 </script>
 <!-- begin:: Header -->
@@ -29,7 +29,6 @@
 					<!-- begin:: Brand -->
 					<div class="kt-header__brand   kt-grid__item" id="kt_header_brand">
 						<a class="kt-header__brand-logo" href="demo9/index.html">
-						<img alt="Logo" src="./assets/media/logos/logo-9.png"/>		
 						</a>		
 					</div>
 					<!-- end:: Brand -->		<!-- begin:: Header Topbar -->

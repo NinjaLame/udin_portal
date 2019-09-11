@@ -23,7 +23,7 @@
         <Route path="/"><Dashboard></Dashboard></Route>
         <Route path="studyplan"><StudyPlan></StudyPlan></Route>
         <Route path="academic/*"><Academic></Academic></Route>
-        <Route path="finance"><Finance></Finance></Route>
+        <Route path="finance/*"><Finance></Finance></Route>
         <Route path="notes"><Notes></Notes></Route>
         <Route path="profile"><Profile></Profile></Route>
         <Route path="project"><ProjectAcademic></ProjectAcademic></Route>
