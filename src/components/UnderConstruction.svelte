@@ -6,7 +6,7 @@
 	<div class="kt-portlet__head kt-portlet__head--noborder">
 		<div class="kt-portlet__head-label">
 			<h3 class="kt-portlet__head-title">
-				Announcements
+				Announcements <span class="btn btn-success" on:click="{goDashboard}" role="button">Back to Dashboard</span>
 			</h3>
 		</div>
 		
@@ -18,7 +18,7 @@
 			</div>
 			
 			<div class="kt-widget7__button">
-				<span class="btn btn-success" on:click="{goDashboard}" role="button">Back to Dashboard</span>
+				
 			</div>
 		</div>
 		<!--end::Widget 7--> 
